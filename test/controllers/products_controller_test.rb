@@ -42,7 +42,6 @@ class ProductsControllerTest < ActionDispatch::IntegrationTest
   test "Verifica si se realizaron cambios" do
     product= products(:carpeta) 
     assert_difference('Product.count' , -1) do
-      delete product_url(product)
     end
   end
 
